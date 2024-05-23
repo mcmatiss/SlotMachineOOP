@@ -90,6 +90,8 @@ do {
             [$row, $column] = $coordinates;
             if ($gameBoard[$row][$column] === $firstElementOfCondition) {
                 $combination++;
+            } else {
+                break;
             }
         }
         if ($combination === count($winCondition)) {
